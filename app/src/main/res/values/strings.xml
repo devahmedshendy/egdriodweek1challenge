@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">EGDriod - Week1 Challenge</string>
+    <string name="zero_number">0</string>
+    <string name="one_number">1</string>
+    <string name="two_number">2</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="window_decorator_panel_container">Window Decorator, Panel Container - Transition</string>
+
+    <string name="thank_you">That\'s All .. Thank You\nFor Giving It a Try\n</string>
+    <string name="flower_emoji">🌹</string>
+    <string name="controlBtnTransition">Control Btn To Progress Transition</string>
+
+    <string name="power_off">Power Off</string>
+    <string name="shutting_down">Shutting Down…</string>
+    <string name="reboot">Reboot</string>
+    <string name="restarting">Restarting…</string>
+    <string name="hibernate">Hibernate</string>
+    <string name="hibernating">Hibernate…</string>
+    <string name="airplane">Airplane Mode</string>
+    <string name="switching_to_airplane">Switching to Airplane…</string>
+    <string name="airplane_mode_subtitle">Airplane Mode is Off</string>
+    <string name="landscape_not_supported">Landscape mode is not supported!</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="not_implemented">Not Implemented!</string>
+</resources>

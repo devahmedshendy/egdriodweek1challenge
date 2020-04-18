@@ -1,0 +1,2 @@
+rootProject.name='EGDriod - Week1 Challenge'
+include ':app'
