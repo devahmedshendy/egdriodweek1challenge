@@ -53,7 +53,6 @@ public class IntroFragment extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        Log.d(TAG, "onCreateView: starts");
         mFragmentBinding = FragmentIntroBinding.inflate(inflater, container, false);
 
         mNumberTv = mFragmentBinding.numberTv;
@@ -65,13 +64,11 @@ public class IntroFragment extends BaseFragment {
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        Log.d(TAG, "onActivityCreated: starts");
         super.onActivityCreated(savedInstanceState);
 
         setupFragment();
         setupEnterAnimation();
         startFragmentAnimation();
-        Log.d(TAG, "onActivityCreated: ends");
     }
 
     @Override
@@ -88,10 +85,8 @@ public class IntroFragment extends BaseFragment {
 
     @Override
     public void onDestroyView() {
-        Log.d(TAG, "onDestroyView: starts");
         super.onDestroyView();
         stopCurrentAnimation();
-        Log.d(TAG, "onDestroyView: ends");
     }
 
     // MARK: Setup Methods

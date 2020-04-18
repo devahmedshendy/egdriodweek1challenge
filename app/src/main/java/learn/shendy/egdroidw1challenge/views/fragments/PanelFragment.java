@@ -138,13 +138,11 @@ public class PanelFragment extends BaseFragment {
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        Log.d(TAG, "onActivityCreated: starts");
         super.onActivityCreated(savedInstanceState);
 
         setupFragment();
         setupEnterAnimation();
         startEnterAnimation();
-        Log.d(TAG, "onActivityCreated: ends");
     }
 
     @Override
@@ -161,10 +159,8 @@ public class PanelFragment extends BaseFragment {
 
     @Override
     public void onDestroyView() {
-        Log.d(TAG, "onDestroyView: starts");
         super.onDestroyView();
         stopCurrentAnimation();
-        Log.d(TAG, "onDestroyView: ends");
     }
 
     // MARK: Setup Methods
@@ -235,7 +231,6 @@ public class PanelFragment extends BaseFragment {
 
                     @Override
                     public void onAnimationEnd(Animator animation) {
-                        Log.d(TAG, "onAnimationEnd: finished leave animator");
                         resetCurrentAnimator();
 
                         switch (clickedBtn.getId()) {
@@ -418,7 +413,6 @@ public class PanelFragment extends BaseFragment {
     }
 
     private OnClickListener mainControlOnClickListener = btn -> {
-        Log.d(TAG, "main control onClick listener: called");
 
         if (mCurrentAnimation.isStarted() || mCurrentAnimation.isRunning()) {
             return;
@@ -429,7 +423,6 @@ public class PanelFragment extends BaseFragment {
     };
 
     private OnClickListener volumeControlOnClickListener = btn -> {
-        Log.d(TAG, "volume control onClick listener: called");
 
         // Show message to user
         Toast.makeText(getContext(), R.string.not_implemented, Toast.LENGTH_LONG).show();

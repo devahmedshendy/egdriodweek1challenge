@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.d(TAG, "onCreate: starts");
         super.onCreate(savedInstanceState);
 
         setupActivity();
@@ -56,16 +55,12 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             openDefaultFragment();
         }
-
-        Log.d(TAG, "onCreate: ends");
     }
 
     @Override
     protected void onDestroy() {
-        Log.d(TAG, "onDestroy: starts");
         clearDisposableContainer();
         super.onDestroy();
-        Log.d(TAG, "onDestroy: ends");
     }
 
     // MARK: Setup Methods
@@ -130,7 +125,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openEndFragment(AnimationCommand animationCommand) {
-        Log.d(TAG, "openEndFragment: called");
         EndFragment fragment = EndFragment.newInstance(animationCommand);
 
         mFragmentManager
@@ -183,7 +177,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void clearDisposableContainer() {
         mDisposableContainer.clear();
-        Log.d(TAG, "clearDisposableContainer: cleared");
     }
 
     private boolean isNoLandscapeDialogOpen() {

@@ -18,29 +18,24 @@ public abstract class BaseMediaPlayer implements OnCompletionListener {
     public void start() {
         if (!mMediaPlayer.isPlaying()) {
             mMediaPlayer.start();
-            Log.d(TAG, "start: done");
         }
     }
 
     public void pause() {
-        Log.d(TAG, "pause: here");
         if (mMediaPlayer.isPlaying()) {
             mMediaPlayer.pause();
-            Log.d(TAG, "pause: done");
         }
     }
 
     public void resume() {
         if (!mMediaPlayer.isPlaying()) {
             mMediaPlayer.start();
-            Log.d(TAG, "resume: done");
         }
     }
 
     public void release() {
         mMediaPlayer.reset();
         mMediaPlayer.release();
-        Log.d(TAG, "release: done");
     }
 
     @Override
