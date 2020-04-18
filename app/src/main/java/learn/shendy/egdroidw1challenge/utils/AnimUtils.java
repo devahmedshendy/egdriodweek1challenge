@@ -50,6 +50,57 @@ public class AnimUtils {
 
     // MARK: Object Animator Static Methods DELAY/DURATION
 
+    public static ObjectAnimator createAttentionEnterStep1Animator(View target) {
+        float from = 0.8f;
+        float to = 1.2f;
+        return ObjectAnimator.ofPropertyValuesHolder(
+                target,
+                scaleXPropertyValueHolder(from, to),
+                scaleYPropertyValueHolder(from, to)
+        );
+    }
+
+    public static ObjectAnimator createAttentionEnterStep2Animator(View target) {
+        float from = 1.2f;
+        float to = 0.9f;
+        return ObjectAnimator.ofPropertyValuesHolder(
+                target,
+                scaleXPropertyValueHolder(from, to),
+                scaleYPropertyValueHolder(from, to)
+        );
+    }
+
+    public static ObjectAnimator createAttentionEnterStep3Animator(View target) {
+        float from = 0.9f;
+        float to = 1f;
+        return ObjectAnimator.ofPropertyValuesHolder(
+                target,
+                scaleXPropertyValueHolder(from, to),
+                scaleYPropertyValueHolder(from, to)
+        );
+    }
+
+    public static ObjectAnimator createAttentionLeaveStep1Animator(View target) {
+        float from = 1f;
+        float to = 1.2f;
+        return ObjectAnimator.ofPropertyValuesHolder(
+                target,
+                scaleXPropertyValueHolder(from, to),
+                scaleYPropertyValueHolder(from, to)
+        );
+    }
+
+    public static ObjectAnimator createAttentionLeaveStep2Animator(View target) {
+        float from = 1.2f;
+        float to = 0f;
+        return ObjectAnimator.ofPropertyValuesHolder(
+                target,
+                alphaPropertyValueHolder(from, to),
+                scaleXPropertyValueHolder(from, to),
+                scaleYPropertyValueHolder(from, to)
+        );
+    }
+
     public static ObjectAnimator createPanelButtonEnterAnimator(View target) {
         return ObjectAnimator.ofPropertyValuesHolder(
                 target,

@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
         
         mFragmentManager
                 .beginTransaction()
-                .add(R.id.fragment_container, new NoLandscapeFragment(), NoLandscapeFragment.TAG)
+                .add(R.id.dialog_fragment_container, new NoLandscapeFragment(), NoLandscapeFragment.TAG)
                 .addToBackStack(NoLandscapeFragment.TAG)
                 .commit();
     }
