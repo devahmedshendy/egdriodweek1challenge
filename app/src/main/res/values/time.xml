@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="intro_start_delay">1500</integer>
+    <integer name="intro_divider_duration">500</integer>
+
+<!--    <integer name="intro_number_enter_delay">500</integer>-->
+    <integer name="intro_number_enter_alpha_duration">1500</integer>
+    <integer name="intro_number_enter_textSize_duration">1500</integer>
+
+<!--    <integer name="intro_number_leave_delay">100</integer>-->
+    <integer name="intro_number_leave_duration">500</integer>
+</resources>

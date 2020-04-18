@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="statusBarColor">@android:color/transparent</color>
+    <color name="navigationBarColor">#00B4CC</color>
+    <color name="windowBackground">#00B4CC</color>
+
+    <color name="introDividers">#A09F9F</color>
+
+    <color name="panelBackground">#D7E7F2</color>
+    <color name="panelSeparator">#D7272D</color>
+
+    <color name="controlBtnSelectBg">#00B4CC</color>
+    <color name="controlBtnStroke">#A09F9F</color>
+
+    <color name="powerOff">#D7272D</color>
+    <color name="reboot">#FF9E35</color>
+    <color name="hibernate">#33577C</color>
+    <color name="airplane">#1B833A</color>
+    <color name="vibration">#686869</color>
+
+    <color name="dialogButtonStroke">#686869</color>
+    <color name="dialogButtonTextColor">#686869</color>
+
+    <color name="fontPrimary">#D7272D</color>
+
+    <color name="asideNumberColor">#A09F9F</color>
+</resources>
